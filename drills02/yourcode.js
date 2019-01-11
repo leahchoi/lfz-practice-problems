@@ -40,9 +40,12 @@ function findMode(array){
     for(let i = 0; i < array.length; i++){
         if(numCounter[array[i]]){
             numCounter[array[i]] += 1;
-        }else {
+            if(numCounter[array[i]] > array.length-i){
+                return array[i];
+            }
+        }
+        else {
             numCounter[array[i]] = 1;
         }
     }
-    return numCounter;
 }

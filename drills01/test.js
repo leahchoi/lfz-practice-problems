@@ -62,11 +62,7 @@ var testVals = [{
       [{'familyName' : 'Paschal','givenName': 'Daniel','greeting': 'Mr.','age': 43,'height' : 185,'colors': {'eye': 'blue','hair': 'brown'},'home address': {'streetNumber': '9200','streetName': 'Irvine Center Drive','state': 'CA','zip': 92618,'city': 'Irvine'}}],
       [{'familyName' : 'McGee','givenName': 'Chuckles','greeting': 'Miss.','age': 28,'height' : 165,'colors': {'eye': 'green','hair': 'green'},'home address': {'streetNumber': '12345','streetName': 'Any St','state': 'Mo','zip': 63102,'city': 'Kansas City'}}],
     ],
-    outputs: [`Mr. Daniel Paschal
-9200 Irvine Center Drive
-Irvine, CA 92618`,`Miss. Chuckles McGee
-12345 Any St
-Kansas City, Mo 63102`
+    outputs: [`Mr. Daniel Paschal 9200 Irvine Center Drive Irvine, CA 92618`,`Miss. Chuckles McGee 12345 Any St Kansas City, Mo 63102`
     ]
   },
   functionToTest: 'makeLabel'
