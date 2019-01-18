@@ -11,7 +11,7 @@ var testVals = [{
   testVals: {
     inputs: [
         ['.numConvert'], 
-        ['.otherConver'],
+        ['.otherConvert'],
       
     ],
     outputs:    
