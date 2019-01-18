@@ -12,11 +12,23 @@ function getPathParts(str) {
         'path': '',
         'file': ''
     };
-    // for (let i = str.length-1; i >= 0; i--){
-
-    // }
-    str = str.replace(':', '').replace('/', '')
-    return str;
+    const protocolIndx = str.indexOf('://');
+    const pathIndx = str.lastIndexOf('/') + 1;
+    let portIndx;
+    pathParts.protocol = str.slice(0, protocolIndx);
+    pathParts.file = str.slice(pathIndx, str.length);
+    for (let i = protocolIndx + 3; i < str.length; i++) {
+        if (str[i] === ':') {
+            pathParts.host = str.slice(protocolIndx + 3, i);
+            portIndx = i + 1;
+        }
+        if (str[i] === '/') {
+            debugger;
+            pathParts.port = parseInt(str.slice(portIndx, i));
+            pathParts.path = str.slice(i + 1, pathIndx - 1);
+            return pathParts;
+        }
+    }
 }
 
 function getCapitalCount(array) {
