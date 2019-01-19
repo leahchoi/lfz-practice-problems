@@ -1,6 +1,3 @@
-
-
-
 var testVals = [{
   question: `changeElements: Change any element with a given class (for example "numConvert")
         grab their text, which will be a number in word form (ie one, three, nine)
