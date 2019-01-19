@@ -28,7 +28,7 @@ function addAttributeToElement(element, attribute, str) {
 }
 
 function putPosInElement(str) {
-    return str;
+    
 }
 
 
