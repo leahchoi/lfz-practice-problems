@@ -13,7 +13,7 @@ function toggleClassOnElement(element, str) {
     }else if (elements.length > 1) {
         for (let i = 0; i < elements.length; i++) {
             elements[i].classList.add(str);
-        }
+        };
     }else {
         document.querySelector(element).classList.add(str)
     }
