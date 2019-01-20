@@ -19,3 +19,11 @@ function generateRandomColor(){
     return `rgb(${red}, ${green}, ${blue})`;
 };
 
+function moveBubbles(){
+    let bubble = document.querySelector('.bubble');
+    bubble.fadeOut(1000, function(){
+        let maxLeft = window.outerWidth - bubble.offsetWidth;
+        let maxTop = window.outerHeight - bubble.offsetHeight;
+        console.log('move bubbles', maxLeft)
+    })
+}
