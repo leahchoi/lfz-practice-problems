@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.container > div{
+    border: 2px solid darkslategray;
+    margin: 2%;
+    text-align: center;
+    padding: 2%;
+    /* display: flex;
+    align-content: space-around; */
+}
