@@ -10,4 +10,4 @@ function translate(word){
     }
 }
 
-translate('friends')
+translate('friends');
