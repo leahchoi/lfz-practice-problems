@@ -8,7 +8,7 @@ function math_sequences(num1, num2) {
     let op = ['+', '-', '/', '*'];
     for (let i = 0; i < op.length; i++) {
         let equation = num1 + op[i] + num2;
-        result.push(`num1 ${op[i]} num2 = ` + eval(equation))
+        result.push(`${num1} ${op[i]} ${num2} = ` + eval(equation))
     }
     return result;
 }
